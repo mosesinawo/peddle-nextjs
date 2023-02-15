@@ -1,0 +1,243 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+ --purple-dark: #BA55D3;
+ --purple-light: hwb(288 33% 24%);
+
+ ;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* UTILITY CLASSES */
+
+.--flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.--flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.--flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.--flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.--flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.--gap-1{
+  gap: 1rem;
+}
+.--gap-2{
+  gap: 2rem;
+}
+.--fs{
+  align-items: flex-start;
+}
+.--tc{
+  text-align: center !important;
+}
+.--ts{
+  text-align: start;
+}
+.--te{
+  text-align: end;
+}
+
+.--dir-column {
+  flex-direction: column;
+}
+.--ml{
+  margin-left:6rem ;
+}
+.--mr{
+ margin-right: 14.3rem;
+}
+.--mt_s{
+margin-top: 10rem !important;
+}
+.--mt{
+  margin-top: 14rem !important;
+}
+.--mt-9{
+  margin-top: 7rem;
+}
+.--w-100{
+  width:100%;
+
+}
+.--fzm{
+  font-family: Rubik;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+}
+.--fzl{
+  font-family: Rubik;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.--header{
+  font-family: Rubik;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0B132A;
+}
+.--text{
+  font-family: Rubik;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0rem;
+  color: #4F5665;
+}
+
+.--text-header{
+  font-family: Rubik;
+font-size: 1.5rem;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+color: #0B132A;
+}
+.--pr{
+  position: relative;
+}
+.--zi{
+  z-index: 1000;
+}
+.--pf{
+  position: fixed;
+  z-index: 1000;
+}
+
+
+
+.button,
+.button:link,
+.button:visited {
+	background-color: var(--purple-dark) ;
+	text-decoration: none;
+	padding: 1rem 5rem;
+	display: inline-block;
+	border-radius: 0.5rem;
+	transition: all .2s;
+	position: relative;
+
+	transition: all .3s;
+	border: none;
+	cursor: pointer;
+  color: #fff;
+}
+
+
+.button:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 21%);
+}
+
+.button:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 21%);
+    color: #fff;
+    
+}
+.button:hover::after{
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.button::after {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+  background-color: var(--purple-dark);
+
+}
+.--btn{
+  font-family: 'Rubik', sans-serif;
+  display: inline;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 1rem 3.5rem;
+  background-color: unset;
+  border: 2px solid #fff;
+  border-radius: 0.4rem;
+transition: all .2s;
+}
+
+.form-control{
+  height: 4rem;
+  font-size: 1.5rem !important;
+}
+.form-label{
+  font-size: 1.5rem;
+}
+.form-select{
+  height: 4rem;
+  font-size: 1.5rem !important;
+}
+.link{
+  font-family: 'Nunito', sans-serif;
+font-size: 1.3rem;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+text-transform: uppercase;
+width: 100%;
+border: 1px solid #fff;
+padding: 1rem 2rem;
+color: #fff;
+text-decoration: none;
+cursor: pointer;
+}
+.link:hover{
+color: #fff;
+}
+
+.Toastify__toast-body{
+  font-size: 18px !important;
+}
